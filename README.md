@@ -20,11 +20,6 @@ Sensors
 - DHT11 DHT22 AM2302 temperature/humidity sensor (`dht22`)
 - BH1750 light level sensor (`bh1750`)
 
-DHT22 Sensors
------------
-
-- DHT11 DHT22 AM2302 temperature/humidity sensor (`lm75`)
-
 Installation
 ------------
 

@@ -249,15 +249,6 @@ sensor_inputs:
         required: no
         default: 2
         min: 0
-      options:
-        type: dict
-        default: {}
-        required: no
-        allow_unknown: yes        
-        schema:      
-          type:
-            type: string 
-            required: no            
 
 logging:
   type: dict

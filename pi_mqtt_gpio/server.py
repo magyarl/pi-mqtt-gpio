@@ -554,6 +554,7 @@ def sensor_timer_thread(SENSOR_MODULES, sensor_inputs, topic_prefix):
                     )
 
         # schedule next call
+        
         next_call = next_call + cycle_time  # every cycle_time sec
         sleep(max(0, next_call - time()))
 
