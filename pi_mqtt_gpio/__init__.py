@@ -225,6 +225,7 @@ sensor_inputs:
   default: []
   schema:
     type: dict
+    allow_unknown: yes
     schema:
       name:
         type: string
@@ -257,5 +258,26 @@ sensor_inputs:
           type:
             type: string 
             required: no            
+
+logging:
+  type: dict
+  required: no
+  allow_unknown: yes
+  default:
+    version: 1
+    formatters:
+      simple:
+        format: "%(asctime)s %(name)s (%(levelname)s): %(message)s"
+    handlers:
+      console:
+        class: logging.StreamHandler
+        level: DEBUG
+        formatter: simple
+        stream: ext://sys.stdout
+    loggers:
+      mqtt_gpio:
+        level: INFO
+        handlers: [console]
+        propagate: yes
 
 """)
